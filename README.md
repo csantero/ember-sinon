@@ -4,10 +4,10 @@ This addon adds support for [Sinon](https://github.com/cjohansen/Sinon.JS) to as
 
 ## Installation
 
-If you are using Ember CLI 0.1.5 or higher:
+If you are using Ember CLI 0.2.3 or higher:
 
 ```
-ember install:addon ember-sinon
+ember install ember-sinon
 ```
 
 otherwise:
