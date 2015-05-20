@@ -8,6 +8,6 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('sinonjs=1.14.1');
+    return this.addBowerPackageToProject('sinonjs');
   }
 };
