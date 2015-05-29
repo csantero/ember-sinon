@@ -8,6 +8,11 @@ module.exports = {
       app.import('bower_components/sinonjs/sinon.js', {
         type: 'test'
       });
+
+      app.import('vendor/ember-sinon/shim.js', {
+        type: 'test',
+        exports: { 'sinon': ['default'] }
+      });
     }
   }
 };

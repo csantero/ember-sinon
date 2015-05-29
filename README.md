@@ -19,9 +19,11 @@ ember g ember-sinon
 
 ## Usage
 
-While in testing mode (i.e. either when visiting `/tests` or when running `ember test`), `sinon` will be available in the global namespace. You can use it normally:
+While in testing mode (i.e. either when visiting `/tests` or when running `ember test`), `sinon` will be available as an import.
 
 ```js
+import sinon from 'sinon';
+
 test(".runCallback() should run the callback passed", function(assert) {
   var spy = sinon.spy();
   this.subject().runCallback(spy);
