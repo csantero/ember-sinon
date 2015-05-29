@@ -8,6 +8,9 @@ module.exports = {
       app.import('bower_components/sinonjs/sinon.js', {
         type: 'test'
       });
+      app.import('bower_components/sinon-qunit/lib/sinon-qunit.js', {
+        type: 'test'
+      });
     }
   }
 };
