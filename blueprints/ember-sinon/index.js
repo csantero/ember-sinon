@@ -8,6 +8,6 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackagesToProject(['sinonjs', 'sinon-qunit']);
+    return this.addBowerPackageToProject('sinonjs');
   }
 };

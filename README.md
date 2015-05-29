@@ -25,12 +25,6 @@ While in testing mode (i.e. either when visiting `/tests` or when running `ember
 test(".runCallback() should run the callback passed", function(assert) {
   var spy = sinon.spy();
   this.subject().runCallback(spy);
-
-  // Default Sinon messages:
-  sinon.assert.calledOnce(spy);
-  sinon.assert.calledWith(spy, 'foo');
-
-  // Custom messages:
   assert.ok(spy.calledOnce, "the callback should be called once");
   assert.ok(spy.calledWith('foo'), "the callback should be passed 'foo' as an argument");
 });
