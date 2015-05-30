@@ -1,4 +1,4 @@
-/* globals sinon, QUnit, test */
+/* globals define, sinon, QUnit */
 
 define('sinon', [], function() {
   "use strict";
