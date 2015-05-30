@@ -37,3 +37,11 @@ test(".runCallback() should run the callback passed", function(assert) {
   assert.ok(spy.calledWith('foo'), "the callback should be passed 'foo' as an argument");
 });
 ```
+
+## Running Tests
+
+You must have PhantomJS installed to run tests.
+
+```
+npm test
+```
