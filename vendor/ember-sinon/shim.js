@@ -3,7 +3,7 @@
 define('sinon', [], function() {
   "use strict";
 
-  if (QUnit) {
+  if (typeof QUnit !== 'undefined') {
     sinon.expectation.fail = sinon.assert.fail = function (msg) {
       QUnit.ok(false, msg);
     };
