@@ -1,1 +1,0 @@
-export { default } from 'ember-sinon/acceptance-tests/sinon';
