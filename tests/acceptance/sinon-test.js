@@ -22,9 +22,3 @@ test('sinon is available as an import and works', function (assert) {
   assert.equal(foo.callCount, 1, 'Spy was called the right number of times.');
   assert.equal(foo.firstCall.args[0], 3, 'Spy was called with the right argument.');
 });
-
-test('sinon-qunit tests work if qunit is available', function (assert) {
-  assert.expect(1);
-  var foo = sinon.spy();
-  sinon.assert.notCalled(foo); // If sinon-qunit is not loaded, then this won't count as an assertion
-});
