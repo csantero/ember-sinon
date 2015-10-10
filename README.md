@@ -38,6 +38,10 @@ test(".runCallback() should run the callback passed", function(assert) {
 });
 ```
 
+## Integration with testing frameworks
+
+Check out [ember-sinon-qunit](https://github.com/elwayman02/ember-sinon-qunit) for QUnit integration!
+
 ## Running Tests
 
 You must have PhantomJS installed to run tests.
