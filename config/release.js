@@ -1,20 +1,20 @@
 /* jshint node:true */
-// var RSVP = require('rsvp');
+var RSVP = require('rsvp');
+var publisher = require('publish');
 
-// For details on each option run `ember help release`
+// Create promise friendly versions of the methods we want to use
+var start = RSVP.denodeify(publisher.start);
+var publish = RSVP.denodeify(publisher.publish);
+
 module.exports = {
-  // local: true,
-  // remote: 'some_remote',
-  // annotation: "Release %@",
-  // message: "Bumped version to %@",
-  // manifest: [ 'package.json', 'bower.json', 'someconfig.json' ],
-  // strategy: 'date',
-  // format: 'YYYY-MM-DD',
-  // timezone: 'America/Los_Angeles',
-  //
-  // beforeCommit: function(project, versions) {
-  //   return new RSVP.Promise(function(resolve, reject) {
-  //     // Do custom things here...
-  //   });
-  // }
+  manifest: ['package.json', 'bower.json'],
+
+  // Publish the new release to NPM after a successful push
+  // If run from travis, this will look for the NPM_USERNAME, NPM_PASSWORD and
+  // NPM_EMAIL environment variables to publish the package as
+  afterPush: function() {
+    return start().then(function() {
+      return publish({});
+    });
+  }
 };
