@@ -1,6 +1,6 @@
 {
   "name": "ember-sinon",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Ember CLI addon for sinon.js",
   "directories": {
     "doc": "doc",
