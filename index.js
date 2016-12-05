@@ -14,11 +14,7 @@ module.exports = {
 
   included: function (app) {
     this._super.included.apply(this, arguments);
-    if (app.tests) {
-      app.import('vendor/ember-sinon/shim.js', {
-        type: 'test',
-        exports: { 'sinon': ['default'] }
-      });
-    }
+
+    app.import('vendor/shims/sinon.js', { type: 'test' });
   }
 };
