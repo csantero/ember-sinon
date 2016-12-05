@@ -13,7 +13,7 @@
   },
   "repository": "https://github.com/csantero/ember-sinon",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4"
   },
   "author": "Chris Santero",
   "maintainers": [
