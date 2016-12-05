@@ -52,6 +52,6 @@ Check out [ember-sinon-qunit](https://github.com/elwayman02/ember-sinon-qunit) f
 
 You must have PhantomJS installed to run tests.
 
-```
-npm test
-```
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
+* `ember test`
+* `ember test --server`
