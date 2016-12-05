@@ -12,8 +12,12 @@ module.exports = {
     }
   },
 
-  included: function (app) {
+  included: function(app) {
     this._super.included.apply(this, arguments);
+
+    while (typeof app.import !== 'function' && app.app) {
+      app = app.app;
+    }
 
     app.import('vendor/shims/sinon.js', { type: 'test' });
   }
