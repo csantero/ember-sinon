@@ -26,7 +26,7 @@
     "broccoli-funnel": "^1.1.0",
     "broccoli-merge-trees": "^1.2.1",
     "ember-cli-babel": "^5.1.7",
-    "sinon": "^1.17.6"
+    "sinon": "^2.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
