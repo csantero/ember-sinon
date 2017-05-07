@@ -20,7 +20,6 @@ otherwise:
 
 ```
 npm install --save-dev ember-sinon
-ember g ember-sinon
 ```
 
 ## Usage
