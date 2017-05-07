@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "broccoli-funnel": "^1.1.0",
-    "broccoli-merge-trees": "^1.2.1",
+    "broccoli-merge-trees": "^1.2.2",
     "ember-cli-babel": "^5.1.7",
     "sinon": "^2.1.0"
   },
