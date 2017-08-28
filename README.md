@@ -10,17 +10,9 @@ This addon adds support for [Sinon](https://github.com/cjohansen/Sinon.JS) to as
 
 ## Installation
 
-If you are using Ember CLI 0.2.3 or higher:
-
-```
-ember install ember-sinon
-```
-
-otherwise:
-
-```
-npm install --save-dev ember-sinon
-```
+* `git clone <repository-url>` this repository
+* `cd ember-sinon`
+* `yarn install`
 
 ## Usage
 
@@ -51,6 +43,12 @@ Check out [ember-sinon-qunit](https://github.com/elwayman02/ember-sinon-qunit) f
 
 You must have PhantomJS installed to run tests.
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
+* `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
+
+## Building
+
+* `ember build`
+
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).

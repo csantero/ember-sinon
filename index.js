@@ -1,17 +1,17 @@
 /* eslint-env node */
 'use strict';
 
-var path = require('path');
-var Funnel = require('broccoli-funnel');
-var MergeTrees = require('broccoli-merge-trees');
+const path = require('path');
+const Funnel = require('broccoli-funnel');
+const MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-sinon',
 
-  included: function (app) {
+  included(app) {
     this._super.included.apply(this, arguments);
 
-    var importContext;
+    let importContext;
     if (this.import) {
       // support for ember-cli >= 2.7
       importContext = this;
@@ -24,14 +24,14 @@ module.exports = {
     importContext.import('vendor/shims/sinon.js', { type: 'test' });
   },
 
-  treeForVendor: function (tree) {
-    var sinonPath = path.dirname(require.resolve('sinon/pkg/sinon'));
-    var sinonTree = new Funnel(sinonPath, {
+  treeForVendor(tree) {
+    let sinonPath = path.dirname(require.resolve('sinon/pkg/sinon'));
+    let sinonTree = new Funnel(sinonPath, {
       files: ['sinon.js'],
       destDir: '/sinon',
     });
 
-    var trees = [tree, sinonTree];
+    let trees = [tree, sinonTree];
 
     return new MergeTrees(trees, {
       annotation: 'ember-sinon: treeForVendor'
@@ -40,9 +40,9 @@ module.exports = {
 
   // included from https://git.io/v6F7n
   // not needed for ember-cli > 2.7
-  _findHostForLegacyEmberCLI: function() {
-    var current = this;
-    var app;
+  _findHostForLegacyEmberCLI() {
+    let current = this;
+    let app;
 
     // Keep iterating upward until we don't have a grandparent.
     // Has to do this grandparent check because at some point we hit the project.
