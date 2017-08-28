@@ -1,5 +1,7 @@
 # Ember-Sinon
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/csantero/ember-sinon.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/csantero/ember-sinon.svg?branch=master)](https://travis-ci.org/csantero/ember-sinon)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-sinon.svg)](http://emberobserver.com/addons/ember-sinon)
 [![Dependency Status](https://www.versioneye.com/user/projects/56c7c42a18b27104252dcb49/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56c7c42a18b27104252dcb49)
