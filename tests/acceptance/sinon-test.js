@@ -1,5 +1,5 @@
-import Ember from 'ember';
 import { module, test } from 'qunit';
+import { run } from '@ember/runloop';
 import startApp from 'dummy/tests/helpers/start-app';
 import sinon from 'sinon';
 
@@ -11,7 +11,7 @@ module('Acceptance | sinon', {
   },
 
   afterEach: function() {
-    Ember.run(application, 'destroy');
+    run(application, 'destroy');
   }
 });
 
