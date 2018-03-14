@@ -1,4 +1,3 @@
-/* eslint-env node */
 'use strict';
 
 const path = require('path');
@@ -8,7 +7,7 @@ const MergeTrees = require('broccoli-merge-trees');
 module.exports = {
   name: 'ember-sinon',
 
-  included(app) {
+  included() {
     this._super.included.apply(this, arguments);
 
     let importContext;

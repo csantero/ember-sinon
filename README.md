@@ -1,4 +1,5 @@
-# Ember-Sinon
+Ember Sinon
+===========
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/csantero/ember-sinon.svg)](https://greenkeeper.io/)
 
@@ -10,13 +11,16 @@
 
 This addon adds support for [Sinon](https://github.com/cjohansen/Sinon.JS) to assist in testing your Ember CLI app.
 
-## Installation
+Installation
+------------------------------------------------------------------------------
 
-* `git clone <repository-url>` this repository
-* `cd ember-sinon`
-* `yarn install`
+```
+ember install ember-sinon
+```
 
-## Usage
+
+Usage
+------------------------------------------------------------------------------
 
 While in testing mode (i.e. either when visiting `/tests` or when running `ember test`), `sinon` will be available as an import.
 
@@ -39,18 +43,36 @@ test(".runCallback() should run the callback passed", function(assert) {
 
 ## Integration with testing frameworks
 
-Check out [ember-sinon-qunit](https://github.com/elwayman02/ember-sinon-qunit) for QUnit integration!
+Check out [ember-sinon-qunit](https://github.com/elwayman02/ember-sinon-qunit) for integration with Ember-QUnit!
 
-## Running Tests
+Contributing
+------------------------------------------------------------------------------
 
-You must have PhantomJS installed to run tests.
+### Installation
 
-* `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+* `git clone git@github.com:csantero/ember-sinon.git`
+* `cd my-addon`
+* `npm install`
 
-## Building
+### Linting
 
-* `ember build`
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
+### Running tests
+
+* `ember test` – Runs the test suite on the current Ember version
+* `ember test --server` – Runs the test suite in "watch mode"
+* `npm test` – Runs `ember try:each` to test your addon against multiple Ember versions
+
+### Running the dummy application
+
+* `ember serve`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
