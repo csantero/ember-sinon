@@ -10,6 +10,15 @@ Ember Sinon
 
 This addon adds support for [Sinon](https://github.com/cjohansen/Sinon.JS) to assist in testing your Ember CLI app.
 
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
+
 Installation
 ------------------------------------------------------------------------------
 
@@ -43,6 +52,12 @@ test(".runCallback() should run the callback passed", function(assert) {
 ## Integration with testing frameworks
 
 Check out [ember-sinon-qunit](https://github.com/elwayman02/ember-sinon-qunit) for integration with Ember-QUnit!
+
+Contributing
+------------------------------------------------------------------------------
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
 
 License
 ------------------------------------------------------------------------------
