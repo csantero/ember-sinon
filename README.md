@@ -1,5 +1,7 @@
-Ember Sinon
+Ember Sinon (_Deprecated_)
 ===========
+
+:warning: **Deprecation notice**: `ember-sinon` is deprecated. Consider using [ember-sinon-qunit](https://github.com/elwayman02/ember-sinon-qunit) instead. :warning:
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/csantero/ember-sinon.svg)](https://greenkeeper.io/)
 
